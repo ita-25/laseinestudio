@@ -1,0 +1,25 @@
+/* =========================================================
+   LA SEINE STUDIO — DESIGN TOKENS
+   Change a value here and it updates everywhere on the site.
+   ========================================================= */
+:root{
+  /* core palette */
+  --plum:#241527;        /* primary dark background */
+  --plum-deep:#160E18;    /* deepest dark, footer / contrast bg */
+  --berry:#B5336B;        /* primary accent — CTAs, links */
+  --berry-deep:#7E2750;   /* darker accent for gradients/hover */
+  --caramel:#C9986B;      /* secondary warm accent */
+  --cream:#F1E6D8;        /* light background */
+  --cream-deep:#E8DAC8;   /* slightly deeper light tone, card edges */
+  --mauve:#8C6B82;        /* muted text / borders */
+  --ink:#2A1F26;          /* main text on light backgrounds */
+
+  /* type */
+  --font-display:'Fraunces', serif;
+  --font-body:'Inter', sans-serif;
+
+  /* layout */
+  --max-width:1200px;
+  --radius:4px;
+  --transition:0.3s ease;
+}
