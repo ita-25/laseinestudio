@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About — La Seine Studio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/variables.css">
+<link rel="stylesheet" href="assets/css/base.css">
+<link rel="stylesheet" href="assets/css/layout.css">
+<link rel="stylesheet" href="assets/css/components.css">
+<link rel="stylesheet" href="assets/css/animations.css">
+<link rel="stylesheet" href="assets/css/responsive.css">
+<style>
+  .story-section{background:var(--cream);}
+  .story-section .inner{max-width:680px;margin:0 auto;text-align:center;}
+  .story-section h2{font-size:1.9rem;font-style:italic;margin-bottom:20px;}
+  .story-section p{color:var(--mauve);line-height:1.7;margin-bottom:16px;}
+  .crew-section{background:var(--cream-deep);text-align:center;}
+  .crew-section h2{font-size:1.7rem;margin-bottom:6px;}
+  .crew-section .eyebrow{color:var(--berry);}
+</style>
+</head>
+<body>
+
+<div class="menu-overlay" id="menuOverlay"></div>
+
+<header id="header">
+  <a href="index.html" class="logo">La Seine Studio</a>
+  <nav class="links">
+    <a href="index.html">Home</a>
+    <a href="stories.html">Stories</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="about.html" class="current">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<nav class="mobile-menu" id="mobileMenu" aria-label="Mobile navigation">
+  <a href="index.html">Home</a>
+  <a href="stories.html">Stories</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="about.html" class="current">About</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<section class="page-hero">
+  <span class="eyebrow">About</span>
+  <h1>The studio behind the curtain</h1>
+  <p>La Seine Studio started the way most stories do — small, unfinished, and a little obsessive about getting one scene exactly right.</p>
+</section>
+
+<section class="story-section reveal">
+  <div class="inner">
+    <h2>Why we tell stories this way</h2>
+    <p>Every story here starts as a sketch on the back of something else — a napkin, a script margin, a sleepless thought. We keep the rough edges in, because that's where the feeling usually is.</p>
+    <p>We're not chasing polish for its own sake. We're chasing the moment a frame stops looking animated and starts looking felt.</p>
+  </div>
+</section>
+
+<section class="behind reveal">
+  <div>
+    <span class="eyebrow" style="color:var(--berry);">The Process</span>
+    <h2>From margin note to moving frame</h2>
+    <p>A story usually begins as a single image or a single line of dialogue. From there: a logline, a cast of characters, rough tests, and a lot of redrawing the same three seconds.</p>
+    <p>Nothing leaves this stage until it feels true — not just technically correct.</p>
+  </div>
+  <div class="behind-art"></div>
+</section>
+
+<section class="crew-section reveal">
+  <span class="eyebrow">Meet the Studio</span>
+  <h2>The people behind the work</h2>
+  <div class="crew-grid">
+    <div class="crew-card">
+      <div class="crew-avatar"></div>
+      <h3>The Storyteller</h3>
+      <span>Writing & Direction</span>
+    </div>
+    <div class="crew-card">
+      <div class="crew-avatar"></div>
+      <h3>The Animator</h3>
+      <span>Motion & Character</span>
+    </div>
+    <div class="crew-card">
+      <div class="crew-avatar"></div>
+      <h3>The Illustrator</h3>
+      <span>Art & Concept</span>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div>
+      <span class="logo">La Seine Studio</span>
+      <p>Animated stories that live somewhere between memory and dream.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Explore</h4>
+      <a href="stories.html">Stories</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="footer-col">
+      <h4>Follow</h4>
+      <div class="social-icons">
+        <a href="#" class="social-icon" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1"/></svg></a>
+        <a href="#" class="social-icon" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2.5" y="6" width="19" height="12" rx="4"/><path d="M11 9.5l4 2.5-4 2.5z" fill="currentColor" stroke="none"/></svg></a>
+        <a href="#" class="social-icon" aria-label="TikTok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 4v9.5a3.5 3.5 0 1 1-3-3.46"/><path d="M14 4c.3 2 1.8 3.4 4 3.6"/></svg></a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 La Seine Studio. All stories reserved.</span>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
