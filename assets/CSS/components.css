@@ -85,17 +85,20 @@
   border-radius: 50%;
   border: 1px solid var(--mauve);
   color: var(--cream-deep);
-  display: block;
   
-  /* Perfect background centering */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 18px 18px;
+  /* CSS Grid Centering */
+  display: grid;
+  place-items: center;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* Encode your SVGs or path files */
-.social-icon.instagram {
-  background-image: url('data:image/svg+xml;utf8,<svg ...></svg>');
+.social-icon svg {
+  width: 18px;
+  height: 18px;
+  /* Reset all dimensions and margins */
+  margin: 0;
+  padding: 0;
 }
 
 /* ---------- 404 page ---------- */
