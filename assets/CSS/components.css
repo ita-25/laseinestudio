@@ -79,41 +79,22 @@
 .filter-tab.active{background:var(--berry);border-color:var(--berry);color:var(--cream);}
 .filter-tab:hover{border-color:var(--berry);}
 
-/* ---------- social icons ---------- */
-.social-icons {
-  display: flex;
-  gap: 14px;
-  justify-content: center;
-}
-
 .social-icon {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  display: inline-flex;       /* Ensures precise inline flexbox behavior */
-  align-items: center;
-  justify-content: center;
   border: 1px solid var(--mauve);
-  color: var(--cream-deep);
-  transition: background var(--transition), border-color var(--transition), color var(--transition);
+  display: block;
   
-  /* Crucial addition: prevents flex container size distortions */
-  box-sizing: border-border-box; 
-  flex-shrink: 0;
+  /* Perfect background centering */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 18px 18px;
 }
 
-.social-icon svg {
-  width: 18px;
-  height: 18px;
-  display: block;             /* Strips out native SVG baseline text margins */
-  margin: auto;               /* Enforces strict mechanical centering */
-  overflow: visible;          /* Prevents optical clipping on thin stroke borders */
-}
-
-.social-icon:hover {
-  background: var(--berry);
-  border-color: var(--berry);
-  color: var(--cream);
+/* Encode your SVGs or path files */
+.social-icon.instagram {
+  background-image: url('data:image/svg+xml;utf8,<svg ...></svg>');
 }
 
 /* ---------- 404 page ---------- */
