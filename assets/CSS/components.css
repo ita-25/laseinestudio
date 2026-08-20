@@ -98,3 +98,23 @@
 .error-page .big{font-size:clamp(3.5rem,10vw,6rem);font-style:italic;color:var(--berry);margin-bottom:10px;}
 .error-page h1{font-size:1.6rem;margin-bottom:14px;}
 .error-page p{color:var(--mauve);max-width:420px;margin-bottom:30px;line-height:1.6;}
+
+
+/* Social Icons Component */
+.social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;            /* Adjust circle width */
+  height: 40px;           /* Adjust circle height */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Adjust border color */
+  border-radius: 50%;
+  text-decoration: none;
+  color: inherit;
+}
+
+.social-icon svg {
+  width: 20px;            /* Size of the inner SVG icon */
+  height: 20px;
+  display: block;
+}
