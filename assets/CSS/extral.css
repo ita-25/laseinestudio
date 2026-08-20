@@ -1,0 +1,18 @@
+/* Social Icons Component */
+.social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;            /* Adjust circle width */
+  height: 40px;           /* Adjust circle height */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Adjust border color */
+  border-radius: 50%;
+  text-decoration: none;
+  color: inherit;
+}
+
+.social-icon svg {
+  width: 20px;            /* Size of the inner SVG icon */
+  height: 20px;
+  display: block;
+}
