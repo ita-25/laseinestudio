@@ -79,25 +79,34 @@
 .filter-tab.active{background:var(--berry);border-color:var(--berry);color:var(--cream);}
 .filter-tab:hover{border-color:var(--berry);}
 
+
+
+/* ---------- social icons ---------- */
+.social-icons {
+  display: flex;
+  gap: 18px;
+  justify-content: center;
+  align-items: center;
+}
+
 .social-icon {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  border: 1px solid var(--mauve);
   color: var(--cream-deep);
-  
-  /* Simple grid centering */
-  display: grid;
-  place-items: center;
-  font-size: 18px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   text-decoration: none;
-  transition: all var(--transition);
+  transition: color var(--transition), transform var(--transition);
+}
+
+.social-icon svg {
+  width: 22px; /* Slightly increased for better visibility without the circle */
+  height: 22px;
+  display: block;
 }
 
 .social-icon:hover {
-  background: var(--berry);
-  border-color: var(--berry);
-  color: var(--cream);
+  color: var(--berry);
+  transform: translateY(-2px); /* Adds a subtle lift effect on hover */
 }
 
 /* ---------- 404 page ---------- */
