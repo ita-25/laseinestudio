@@ -80,15 +80,41 @@
 .filter-tab:hover{border-color:var(--berry);}
 
 /* ---------- social icons ---------- */
-.social-icons{display:flex;gap:14px;justify-content:center;}
-.social-icon{
-  width:40px;height:40px;border-radius:50%;
-  display:flex;align-items:center;justify-content:center;
-  border:1px solid var(--mauve);color:var(--cream-deep);
-  transition:background var(--transition), border-color var(--transition), color var(--transition);
+.social-icons {
+  display: flex;
+  gap: 14px;
+  justify-content: center;
 }
-.social-icon svg{width:18px;height:18px;}
-.social-icon:hover{background:var(--berry);border-color:var(--berry);color:var(--cream);}
+
+.social-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: inline-flex;       /* Ensures precise inline flexbox behavior */
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--mauve);
+  color: var(--cream-deep);
+  transition: background var(--transition), border-color var(--transition), color var(--transition);
+  
+  /* Crucial addition: prevents flex container size distortions */
+  box-sizing: border-border-box; 
+  flex-shrink: 0;
+}
+
+.social-icon svg {
+  width: 18px;
+  height: 18px;
+  display: block;             /* Strips out native SVG baseline text margins */
+  margin: auto;               /* Enforces strict mechanical centering */
+  overflow: visible;          /* Prevents optical clipping on thin stroke borders */
+}
+
+.social-icon:hover {
+  background: var(--berry);
+  border-color: var(--berry);
+  color: var(--cream);
+}
 
 /* ---------- 404 page ---------- */
 .error-page{
@@ -100,21 +126,3 @@
 .error-page p{color:var(--mauve);max-width:420px;margin-bottom:30px;line-height:1.6;}
 
 
-/* Social Icons Component */
-.social-icon {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 40px;            /* Adjust circle width */
-  height: 40px;           /* Adjust circle height */
-  border: 1px solid rgba(255, 255, 255, 0.2); /* Adjust border color */
-  border-radius: 50%;
-  text-decoration: none;
-  color: inherit;
-}
-
-.social-icon svg {
-  width: 20px;            /* Size of the inner SVG icon */
-  height: 20px;
-  display: block;
-}
