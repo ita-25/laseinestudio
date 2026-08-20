@@ -86,19 +86,18 @@
   border: 1px solid var(--mauve);
   color: var(--cream-deep);
   
-  /* CSS Grid Centering */
+  /* Simple grid centering */
   display: grid;
   place-items: center;
-  padding: 0;
-  box-sizing: border-box;
+  font-size: 18px;
+  text-decoration: none;
+  transition: all var(--transition);
 }
 
-.social-icon svg {
-  width: 18px;
-  height: 18px;
-  /* Reset all dimensions and margins */
-  margin: 0;
-  padding: 0;
+.social-icon:hover {
+  background: var(--berry);
+  border-color: var(--berry);
+  color: var(--cream);
 }
 
 /* ---------- 404 page ---------- */
